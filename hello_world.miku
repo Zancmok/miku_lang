@@ -1,0 +1,62 @@
+// a comment
+
+func data_type(): void
+{
+    n0: void;
+    n1: int;
+    n2: char;
+    n3: string;
+    n4: bool;
+    n5: table;
+    n6: float;
+
+    n0 = nil;
+    n1 = 0;
+    n2 = 's';
+    n3 = "s";
+    n4 = false;
+    n5 = {};
+    n6 = 0.0;
+};
+
+func hello_world(): void
+{
+    sing("Hello, World!");
+};
+
+func miku(argc: int, argv: table): int
+{
+    sing("Hello, World!");
+    return 0;
+};
+
+func loop(): void
+{
+    i: int;
+    for (i = 0, i < 10, i++)
+    {
+        sing(i);
+    };
+
+    j: int;
+    j = 0;
+    while (j < 10)
+    {
+        sing(j);
+        j++;
+    }
+
+    l: int;
+    l = 1;
+
+    if (l == 1)
+    {
+        sing("l is 1");
+    }
+    else
+    {
+        sing("l is not 1");
+    };
+};
+
+class
